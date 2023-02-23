@@ -1,0 +1,225 @@
+/* CSS geral */
+
+*{  
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #e3e5df;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/tardis.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Header da lista */
+
+.todo-container {
+    max-width: 450px;
+    margin: 1.5rem auto;
+    background-color: #ffffff38;
+    padding: 1.5rem;
+    border-radius: 15px;
+
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #1f2d50;
+}
+
+input, select {
+    font-size: 13px;
+    border-radius: 0.5em;
+    padding: 8px;
+    color: #000000;
+}
+
+/*botões gerais*/
+
+button {
+    border-radius: 0.3em;
+    border: 2px solid #1f2d50 ;
+    color: black;
+    font-size: 1rem;
+    padding: .3rem .6rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s; 
+    margin-right: 2px;
+}
+
+button i {
+    color: #000000;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+/*Botões específicos*/
+
+#cancelar {
+    color: rgb(0, 0, 0);
+    background-color: rgb(228, 12, 12);
+}
+
+#cancelar:hover, 
+#cancelar:hover > i {
+    color: rgba(223, 73, 73, 0.363);
+    background-color: rgba(219, 29, 29, 0.363);
+}
+
+
+    
+
+#adicionar  {
+    color: black;
+    background-color: green;
+}
+
+#adicionar:hover,
+#adicionar:hover > i{
+    color: rgb(6, 190, 6);
+    background-color: rgb(74, 145, 74);
+}
+
+
+
+
+#alterar    {
+    color: black;
+    background-color: rgb(218, 218, 6);
+}
+
+#alterar:hover,
+#alterar:hover > i {
+    color: rgb(238, 238, 39);
+    background-color: rgb(221, 221, 180);
+}
+
+
+
+
+#procurar {
+    color: #000000;
+    background-color: rgb(47, 47, 231);
+}
+
+#procurar:hover,
+#procurar:hover > i {
+    color: rgb(99, 99, 241);
+    background-color: rgb(115, 115, 235);
+}
+
+/* Forms */
+
+#form-top,
+#edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #1f2d50;
+}
+
+#edit-form{
+    margin-bottom: 2rem;
+}
+
+#form-top p,
+#edit-form p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .3rem ;
+}
+
+/* Toolbar */ 
+
+#configurate-bar {
+    padding: 1rem;
+    border-bottom: 1px solid #1f2d50;
+    display: flex;
+}
+
+#configurate-bar h4 {
+    margin-bottom: .5rem;
+}
+
+#search {
+    border-right: 1px solid #1f2d50;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display:flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.2rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+    color: #000000;
+}
+
+option {
+    color: #000000;
+}
+
+/* List */
+
+.to-do {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #1f2d50;
+    transition: .3s;
+}
+
+.to-do :hover{
+    color: #ffffff38;
+}
+
+.to-do h3 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.to-do button {
+    margin-left: .1rem;
+}
+
+.done {
+    background-color: #9cb4eb;
+    display: flex;
+    transition: .5s;
+    margin: 0;
+}
+
+.done h3 {
+    color: #e3e5df;
+    text-decoration: line-through;
+    font-style: italic;
+}
